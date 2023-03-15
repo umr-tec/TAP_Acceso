@@ -1,0 +1,11 @@
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\bin\Debug\TAP_U1_Ejemplo2.exe.config
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\bin\Debug\TAP_U1_Ejemplo2.exe
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\bin\Debug\TAP_U1_Ejemplo2.pdb
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\obj\Debug\TAP_U1_Ejemplo2.csproj.AssemblyReference.cache
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\obj\Debug\TAP_U1_Ejemplo2.frmAcceso.resources
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\obj\Debug\TAP_U1_Ejemplo2.Properties.Resources.resources
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\obj\Debug\TAP_U1_Ejemplo2.csproj.GenerateResource.cache
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\obj\Debug\TAP_U1_Ejemplo2.csproj.CoreCompileInputs.cache
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\obj\Debug\TAP_U1_Ejemplo2.exe
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\obj\Debug\TAP_U1_Ejemplo2.pdb
+C:\Users\ulise\source\repos\TAP_U1_Ejemplo2\obj\Debug\TAP_U1_Ejemplo2.frmCategorias.resources
