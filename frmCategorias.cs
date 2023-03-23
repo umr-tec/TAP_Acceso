@@ -16,5 +16,10 @@ namespace TAP_U1_Ejemplo2
         {
             InitializeComponent();
         }
+
+        private void frmCategorias_Load(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = frmAcceso.nombreConectado;
+        }
     }
 }

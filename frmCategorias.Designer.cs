@@ -29,19 +29,51 @@ namespace TAP_U1_Ejemplo2
         /// </summary>
         private void InitializeComponent()
         {
+            this.ssInformacion = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ssInformacion.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // ssInformacion
+            // 
+            this.ssInformacion.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.ssInformacion.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.ssInformacion.Location = new System.Drawing.Point(0, 373);
+            this.ssInformacion.Name = "ssInformacion";
+            this.ssInformacion.Size = new System.Drawing.Size(515, 22);
+            this.ssInformacion.TabIndex = 0;
+            this.ssInformacion.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Font = new System.Drawing.Font("IBM Plex Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 16);
             // 
             // frmCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 475);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(515, 395);
+            this.Controls.Add(this.ssInformacion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCategorias";
-            this.Text = "frmCategorias";
+            this.Text = "Categorias";
+            this.Load += new System.EventHandler(this.frmCategorias_Load);
+            this.ssInformacion.ResumeLayout(false);
+            this.ssInformacion.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.StatusStrip ssInformacion;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

@@ -9,6 +9,8 @@ namespace TAP_U1_Ejemplo2
     {
         //Crear Dictionary para los datos de acceso
         Dictionary<string, string> credencialesAcceso = new System.Collections.Generic.Dictionary<string, string>();
+        public static string nombreConectado;
+
         public frmAcceso()
         {
             InitializeComponent();
@@ -17,7 +19,7 @@ namespace TAP_U1_Ejemplo2
         private void frmAcceso_Load(object sender, EventArgs e)
         {            
             //LLenar el Dictionary
-            credencialesAcceso.Add("211000112", "Amador");
+            credencialesAcceso.Add("211000112", "Amador Rivera Martínez");
             credencialesAcceso.Add("211000126", "Ezequiel");
             credencialesAcceso.Add("211000122", "Daniela");
             credencialesAcceso.Add("211000115", "Walter");
@@ -71,6 +73,7 @@ namespace TAP_U1_Ejemplo2
             if (credencialesAcceso.ContainsKey(txtUsuario.Text) )
             {
                 MessageBox.Show("Bienvenido al sistema.", "TAP", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                nombreConectado = credencialesAcceso[txtUsuario.Text];
                 this.Hide();
                 categorias.Show();
             }
@@ -94,7 +97,7 @@ namespace TAP_U1_Ejemplo2
                 //el método SetError, recibe dos parametros:
                 //el 1ro. es el control en donde queremos que aparezca el error provider (en este ejemplo el error provider aparecerá a lado de la caja de texto llamada txtUsuario)
                 // el 2o. indica que texto queremos que muestre el error provider (para ver el texto debemos colocar el cursos por encima del error provider cuando este aparezca en pantalla)
-                epNumeros.SetError(txtUsuario, "Debes ingrsar solo números");
+                epNumeros.SetError(txtUsuario, "Debes ingrsar solo números.");
                 return;
             }//activamos un else para ocular nuevamente el error provoder cuando la entrada a la caja de texto sea la deseada
             else
