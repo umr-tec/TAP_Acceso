@@ -113,6 +113,16 @@ namespace TAP_U1_Ejemplo2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mando {
+            get {
+                object obj = ResourceManager.GetObject("mando", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap verified_FILL1_wght400 {
             get {
                 object obj = ResourceManager.GetObject("verified_FILL1_wght400", resourceCulture);

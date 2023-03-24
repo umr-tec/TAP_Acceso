@@ -21,5 +21,12 @@ namespace TAP_U1_Ejemplo2
         {
             toolStripStatusLabel1.Text = frmAcceso.nombreConectado;
         }
+
+        private void toolStripSplitButton1_ButtonClick(object sender, EventArgs e)
+        {
+            //Application.Exit();
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

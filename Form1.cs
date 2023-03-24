@@ -10,6 +10,8 @@ namespace TAP_U1_Ejemplo2
         //Crear Dictionary para los datos de acceso
         Dictionary<string, string> credencialesAcceso = new System.Collections.Generic.Dictionary<string, string>();
         public static string nombreConectado;
+        //Intanciar el Form frmCategorias
+        frmCategorias categorias;
 
         public frmAcceso()
         {
@@ -64,18 +66,29 @@ namespace TAP_U1_Ejemplo2
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
-        {
-            //Intanciar el Form frmCategorias
-            frmCategorias categorias = new frmCategorias();
-
+        {            
             //Validar credenciales de acceso
             string user = "UMR", pass = "1234";
             if (credencialesAcceso.ContainsKey(txtUsuario.Text) )
             {
                 MessageBox.Show("Bienvenido al sistema.", "TAP", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 nombreConectado = credencialesAcceso[txtUsuario.Text];
+                //la variable global la convertimos en objeto
+                categorias = new frmCategorias();
                 this.Hide();
-                categorias.Show();
+                DialogResult respuesta = categorias.ShowDialog();
+                if (respuesta == DialogResult.OK)
+                {
+                    this.Show();
+                    txtUsuario.Clear();
+                    txtUsuario.Focus();
+                }
+                else
+                {
+                    categorias.Show();
+                    
+                }
+                
             }
             else
             {

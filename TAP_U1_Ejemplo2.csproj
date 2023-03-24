@@ -106,5 +106,8 @@
   <ItemGroup>
     <None Include="Resources\verified_FILL1_wght400.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mando.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
