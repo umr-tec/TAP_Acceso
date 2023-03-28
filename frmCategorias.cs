@@ -28,5 +28,12 @@ namespace TAP_U1_Ejemplo2
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
+        private void frmCategorias_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

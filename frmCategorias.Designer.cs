@@ -76,6 +76,7 @@ namespace TAP_U1_Ejemplo2
             this.MinimizeBox = false;
             this.Name = "frmCategorias";
             this.Text = "Categorias";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCategorias_FormClosing);
             this.Load += new System.EventHandler(this.frmCategorias_Load);
             this.ssInformacion.ResumeLayout(false);
             this.ssInformacion.PerformLayout();

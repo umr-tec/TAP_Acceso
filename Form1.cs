@@ -67,8 +67,7 @@ namespace TAP_U1_Ejemplo2
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {            
-            //Validar credenciales de acceso
-            string user = "UMR", pass = "1234";
+            //Validar credenciales de acceso        
             if (credencialesAcceso.ContainsKey(txtUsuario.Text) )
             {
                 MessageBox.Show("Bienvenido al sistema.", "TAP", MessageBoxButtons.OK, MessageBoxIcon.Information);
